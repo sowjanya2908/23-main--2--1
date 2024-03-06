@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ext": ".ts,.js",
+    "ignore": [],
+    "exec": "ts-node ./src/server.ts",
+    "events": {
+        "crash": "sh -c 'lsof -i :${PORT:-4040} -t | xargs kill'"
+    }
+}

@@ -1,0 +1,13 @@
+node_modules/
+.vscode/
+.env.dev
+.env.prod
+.env.staging
+package-lock.json
+result_files/
+cardiac_ftp/
+.env
+dist
+dist/
+dev_restart.sh
+prod_restart.sh
