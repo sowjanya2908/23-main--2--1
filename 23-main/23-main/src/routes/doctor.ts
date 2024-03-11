@@ -1,10 +1,14 @@
 import { Router } from "express";
 import { DoctorController } from "../controllers/doctor";
-const doctorController = new DoctorController();
+
 const router: Router = Router();
 
 router.post(
     "/doctor/adddoctor",
-    doctorController.createuser1
+    DoctorController.createuser1
+  );
+  router.get(
+    "/user/GetDoctorList",
+    DoctorController.GetDoctorList
   );
   export default router;

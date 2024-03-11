@@ -4,7 +4,7 @@ const doctorSchema = new Schema(
 
   {
 
-    Firstname:{type:String}
+    Firstname:{type:String,default:"",required : true}
     ,Lastname:{type:String}
     ,Address:{type:String}
     ,email:{type:String}
